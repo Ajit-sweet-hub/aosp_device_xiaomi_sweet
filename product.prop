@@ -17,3 +17,6 @@ debug.sf.enable_gl_backpressure=1
 
 # Prefetto
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
+# App
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
