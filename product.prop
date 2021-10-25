@@ -14,3 +14,6 @@ renderthread.skia.reduceopstasksplitting=true
 
 # Graphics
 debug.sf.enable_gl_backpressure=1
+
+# Prefetto
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
