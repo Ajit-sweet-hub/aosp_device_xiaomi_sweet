@@ -11,3 +11,6 @@ ro.control_privapp_permissions=log
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true 
+
+# Graphics
+debug.sf.enable_gl_backpressure=1
