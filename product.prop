@@ -6,3 +6,8 @@ org.pixelplusui.device=Redmi Note 10 Pro
 persist.sys.usb.config=mtp,adb ro.adb.secure=0 ro.secure=0 
 ro.debuggable=1
 ro.control_privapp_permissions=log
+
+# Render engine
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true 
