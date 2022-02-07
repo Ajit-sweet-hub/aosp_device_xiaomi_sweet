@@ -8,6 +8,8 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit common SuperiorOS configurations
 $(call inherit-product, vendor/cipher/config/common.mk)
 
+CIPHER_GAPPS := true
+
 PRODUCT_PACKAGES += \
   Updater \
   CipherShades \

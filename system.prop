@@ -23,9 +23,8 @@ persist.vendor.camera.facepp.fdenable=0
 # One handed mode
 ro.support_one_handed_mode=true
 
-# Superior-OS Props
-ro.superior.maintainer=ZeSyI
-org.superior.device=Redmi Note 10 Pro
+# Cipher-OS maintainer props
+ro.cipher.maintainer=ZeSyI
 
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
