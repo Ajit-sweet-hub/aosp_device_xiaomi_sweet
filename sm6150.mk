@@ -153,6 +153,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Google Battery HAL
+PRODUCT_PACKAGES += \
+    vendor.google.google_battery@1.2
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
@@ -185,6 +189,12 @@ PRODUCT_COPY_FILES += \
 # Handheld hardware
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
+
+# Thermal
+ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+endif
 
 # Health
 PRODUCT_PACKAGES += \
@@ -272,7 +282,7 @@ USE_DEX2OAT_DEBUG := false
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-corvus
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
