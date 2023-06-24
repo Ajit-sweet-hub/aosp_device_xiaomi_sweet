@@ -8,3 +8,6 @@ allow system_app sysfs_vibrator:file rw_file_perms;
 
 # Xiaomi Parts
 allow system_app sysfs_thermal:file rw_file_perms;
+
+# FPS Info
+genfscon sysfs /class/drm/sde-crtc-0/measured_fps                               u:object_r:vendor_sysfs_graphics:s0
