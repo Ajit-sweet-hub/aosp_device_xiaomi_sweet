@@ -3,6 +3,9 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.bt.a2dp.aac_whitelist=false
 
+# Perf
+ro.vendor.perf.scroll_opt=true
+
 # Camera
 vendor.camera.aux.packagelist=com.android.camera
 
