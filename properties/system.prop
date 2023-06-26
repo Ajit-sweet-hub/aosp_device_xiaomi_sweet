@@ -21,4 +21,4 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 persist.vendor.camera.facepp.fdenable=0
 
 # maintainer
-ro.spark.maintainer=Ajit
+#ro.spark.maintainer=Ajit
