@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common stuff
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -14,19 +14,14 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Ignore Neverallows on USER build
-SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
-
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Gapps
+WITH_GAPPS=true
 TARGET_GAPPS_ARCH := arm64
 
-# Official
-HAVOC_BUILD_TYPE := Official
-
-PRODUCT_NAME := havoc_sweet
+PRODUCT_NAME := spark_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro

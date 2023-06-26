@@ -8,7 +8,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Display
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 ro.sf.lcd_density=440
 
 # WiFi Display
@@ -20,8 +20,5 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Camera
 persist.vendor.camera.facepp.fdenable=0
 
-# Havoc Official
-ro.havoc.device.name=Xiaomi Redmi Note 10 Pro
-ro.havoc.group.url=https://t.me/+tlKUR8PMaqI2OTA1
-ro.havoc.maintainer=Paras Dhiman
-ro.havoc.maintainer.username=Ken_kaneki_69
+# maintainer
+ro.spark.maintainer=Ajit

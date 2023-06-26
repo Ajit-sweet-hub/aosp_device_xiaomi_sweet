@@ -373,9 +373,6 @@
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>    
-
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
@@ -709,7 +706,7 @@
     <string name="config_gpu_busy_path">/sys/kernel/gpu/gpu_busy</string>
 
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">true</bool>    
+    <bool name="config_adaptive_sleep_available">true</bool>
 
     <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
          will be used. -->

@@ -26,7 +26,5 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">@*android:string/config_mainBuiltInDisplayCutout</string>
 
     <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">4</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">5</integer>
-
+    <integer name="config_maxVisibleStatusIconContainer">4</integer>
 </resources>

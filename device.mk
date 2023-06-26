@@ -121,7 +121,7 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 PRODUCT_PACKAGES += \
-    NotchBarKillerSweet 
+    NotchBarKillerSweet
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -329,7 +329,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-service \
+    android.hardware.health@2.1-service-qti \
     android.hardware.health@2.1-impl
 
 # ContextHub
@@ -380,4 +380,3 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
-

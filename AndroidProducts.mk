@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_sweet.mk
+    $(LOCAL_DIR)/spark_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_sweet-eng \
-    havoc_sweet-userdebug \
-    havoc_sweet-user
+    spark_sweet-eng \
+    spark_sweet-userdebug \
+    spark_sweet-user
