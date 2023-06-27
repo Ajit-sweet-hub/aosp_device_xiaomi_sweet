@@ -18,6 +18,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Gapps
+export export WITH_GAPPS=true
 with_gapps=true
 TARGET_GAPPS_ARCH := arm64
 
