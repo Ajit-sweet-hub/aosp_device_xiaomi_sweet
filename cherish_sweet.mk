@@ -18,8 +18,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Gapps
-WITH_GAPPS=true
-CHERISH_WITHGAPPS=true
+with_gapps=true
 TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := cherish_sweet
