@@ -52,7 +52,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 TARGET_KERNEL_CONFIG := vendor/sweet_user_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 TARGET_KERNEL_ARCH := arm64
 
 # Partitions
