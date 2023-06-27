@@ -125,6 +125,7 @@ on property:ro.boot.dp=0x0 && property:ro.boot.secureboot=1
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
+
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
     chown system system /proc/tp_selftest
@@ -152,8 +153,8 @@ on boot
     setprop persist.vendor.cp.support_qc3p5 0
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
-# Add a cpuset for the camera daemon
-# We want all cores for camera
+    # Add a cpuset for the camera daemon
+    # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
     write /dev/cpuset/camera-daemon/cpus 0-7
     write /dev/cpuset/camera-daemon/mems 0
@@ -161,25 +162,25 @@ on boot
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
-#palm_sensor
+    #palm_sensor
     chown system system /sys/class/touch/touch_dev/palm_sensor
 
     chown system system /dev/lirc0
     chmod 0660 /dev/lirc0
 
-#FOD
-    chown system system /sys/class/touch/tp_dev/fod_status
-    chmod 0664 /sys/class/touch/tp_dev/fod_status
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 
-#change owner of white led
+    #change owner of white led
     chown system system /sys/class/leds/white/brightness
     chown system system /sys/class/leds/white/breath
 
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
-#Load WLAN driver
+    #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
-#USB controller configuration
+    #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
     setprop vendor.usb.rmnet.inst.name "rmnet"
@@ -187,7 +188,7 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
-# access permissions for FPC service
+    # access permissions for FPC service
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
 
@@ -384,6 +385,6 @@ on property:persist.sys.miui_optimization=true
 on property:persist.sys.mcc.mnc=*
     setprop persist.vendor.mcc.mnc ${persist.sys.mcc.mnc}
 
-# Restrict permissions to socket file 
+# Restrict permissions to socket file
 # to hide Magisk & co.
     chmod 440 /proc/net/unix
