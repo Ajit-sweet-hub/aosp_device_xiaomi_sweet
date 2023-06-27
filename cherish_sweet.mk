@@ -8,19 +8,16 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common stuff
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_BLUR := true
-CHERISH_WITHGAPPS=true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Gapps
-export export WITH_GAPPS=true
-with_gapps=true
+# CheriahOS  Stuffs
+WITH_GMS := true
+TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 PRODUCT_NAME := cherish_sweet
 PRODUCT_DEVICE := sweet
