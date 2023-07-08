@@ -23,9 +23,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
-# Official
-HAVOC_BUILD_TYPE := Official
-
 PRODUCT_NAME := havoc_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
