@@ -92,6 +92,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.sweet
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.2.vendor
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
